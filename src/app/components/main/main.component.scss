@@ -1,7 +1,30 @@
-#titleFirstSection {
-    font-family: "Dancing Script", cursive;
+#titleSecondSection, 
+.numbers,
+p,
+li,
+#titleThirdSection,
+#titleFifthSection,
+.projectDescriptions,
+#titleSeventhSection,
+#testo,
+.slider .list .item p,
+.slider2 .list .item p,
+#workInProgressTex,
+.slider3 .list .item p  {
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-style: normal;
+}
+#titleFirstSection,
+.subtitlesThirdSection,
+#subtitleSeventhSection,
+.linkSeventhSection,
+.detailsSeventhSection,
+#workInProgressTitle  {
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-style: normal;}
+#titleFirstSection {
     font-size: 7rem;
     position: absolute;
     top: 6%;
@@ -17,11 +40,7 @@
     position: absolute;
     top: 25%;
 }
-
 #testo {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
     font-size: 3rem;
     position: absolute;
     top: 68%;
@@ -29,7 +48,6 @@
     display: inline-block;
     animation: glitch 1s linear infinite;
 }
-
 @keyframes glitch {
     2%,
     64% {
@@ -43,20 +61,17 @@
         transform: translate(0, 0) skew(5deg);
     }
 }
-
 #testo:before,
 #testo:after {
     content: attr(title);
     position: absolute;
     left: 0;
 }
-
 #testo:before {
     animation: glitchTop 1s linear infinite;
     clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
-
 @keyframes glitchTop {
     2%,
     64% {
@@ -70,13 +85,11 @@
         transform: translate(13px, -1px) skew(-13deg);
     }
 }
-
 #testo:after {
     animation: glitchBotom 1.5s linear infinite;
     clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
     -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
-
 @keyframes glitchBotom {
     2%,
     64% {
@@ -90,26 +103,6 @@
         transform: translate(-22px, 5px) skew(21deg);
     }
 }
-
-#titleSecondSection {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.numbers {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-}
-
-p,
-li {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-}
-
 #table {
     -webkit-transform: rotate(-3deg);
     -moz-transform: rotate(-3deg);
@@ -117,20 +110,12 @@ li {
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
 }
-
 #titleThirdSection {
     text-align: center;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
     position: absolute;
     bottom: 43%;
 }
-
 .subtitlesThirdSection {
-    font-family: "Dancing Script", cursive;
-    font-weight: 400;
-    font-style: normal;
     font-size: 2rem;
 }
 #a {
@@ -144,7 +129,6 @@ li {
     font-weight: 600;
     font-size: 20px;
 }
-
 #a::before {
     content: "";
     position: absolute;
@@ -156,11 +140,9 @@ li {
     transition: 0.3s ease-in-out;
     transform: scaleY(1);
 }
-
 #a:hover::before {
     transform: scaleY(0);
 }
-
 #a::after {
     content: "";
     position: absolute;
@@ -173,16 +155,13 @@ li {
     transform: scaleX(1);
     transition-delay: 0.5s;
 }
-
 #a:hover::after {
     transform: scaleX(0);
 }
-
 #a span {
     position: relative;
     z-index: 3;
 }
-
 button {
     position: absolute;
     top: 45%;
@@ -193,20 +172,12 @@ button {
     border: none;
     padding: 0;
 }
-
-#titleFifthSection {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .cards {
     width: 33.3%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .projectTitles {
     font-family: "Dancing Script", cursive;
     font-weight: 700;
@@ -214,48 +185,27 @@ button {
     font-size: 2rem;
     margin-bottom: 0;
 }
-
 .projectDescriptions {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
     font-size: 0.7rem;
     padding: 2rem;
     padding-top: 1rem;
     margin-left: 1rem;
     text-align: justify;
 }
-
 #titleSeventhSection {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
     font-size: 4.4rem;
 }
-
 #subtitleSeventhSection {
-    font-family: "Dancing Script", cursive;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1.4rem;
 }
-
 .linkSeventhSection {
     text-decoration: none;
     color: #000000;
-    font-family: "Dancing Script", cursive;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1.5rem;
 }
-
 .detailsSeventhSection {
-    font-family: "Dancing Script", cursive;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1.5rem;
 }
-
 #dev {
     -webkit-transform: rotate(3deg);
     -moz-transform: rotate(3deg);
@@ -263,7 +213,6 @@ button {
     -ms-transform: rotate(3deg);
     transform: rotate(3deg);
 }
-
 .slider {
     border: 2px solid black;
     width: calc(100% - var(--height));
@@ -296,12 +245,8 @@ button {
 }
 .slider .list .item p {
     width: 100%;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
     font-size: 0.6rem;
 }
-
 @keyframes autoRun {
     from {
         left: 100%;
@@ -310,7 +255,6 @@ button {
         left: calc(var(--width) * -1);
     }
 }
-
 .slider1 {
     transform: rotate(90deg) translateX(calc(var(--width) + 56.5px)) translateY(calc(var(--width) - 297px));
     /* Opzionale: Per evitare che l'elemento esca dai limiti */
@@ -350,10 +294,6 @@ button {
     font-style: normal;
     font-size: 0.6rem;
 }
-
-
-
-
 .slider2 {
     transform: rotate(180deg) translateX(calc(var(--width) - 120px));
     /* Opzionale: Per evitare che l'elemento esca dai limiti */
@@ -388,27 +328,11 @@ button {
 }
 .slider2 .list .item p {
     width: 100%;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
     font-size: 0.6rem;
-}
-
-
-
-#workInProgressTitle{
-    font-family: "Dancing Script", cursive;
-    font-weight: 400;
-    font-style: normal;
 }
 #workInProgressText{
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
     font-size: 0.6rem;
 }
-
-
 .slider3 {
     transform: rotate(270deg) translateX(calc(var(--width) + 57.5px)) translateY(calc(var(--width) - 297.3px));
     /* Opzionale: Per evitare che l'elemento esca dai limiti */
@@ -443,13 +367,8 @@ button {
 }
 .slider3 .list .item p {
     width: 100%;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
     font-size: 0.6rem;
 }
-
-
 .section{
     height: 100dvh;
 }
