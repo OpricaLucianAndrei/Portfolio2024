@@ -1,0 +1,455 @@
+#titleFirstSection {
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7rem;
+    position: absolute;
+    top: 6%;
+}
+#profilo {
+    width: 30%;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    z-index: -1;
+    position: absolute;
+    top: 25%;
+}
+
+#testo {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    position: absolute;
+    top: 68%;
+    color: black;
+    display: inline-block;
+    animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+    2%,
+    64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+    4%,
+    60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
+
+#testo:before,
+#testo:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+
+#testo:before {
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+    2%,
+    64% {
+        transform: translate(2px, -2px);
+    }
+    4%,
+    60% {
+        transform: translate(-2px, 2px);
+    }
+    62% {
+        transform: translate(13px, -1px) skew(-13deg);
+    }
+}
+
+#testo:after {
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+    2%,
+    64% {
+        transform: translate(-2px, 0);
+    }
+    4%,
+    60% {
+        transform: translate(-2px, 0);
+    }
+    62% {
+        transform: translate(-22px, 5px) skew(21deg);
+    }
+}
+
+#titleSecondSection {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.numbers {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p,
+li {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#table {
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+#titleThirdSection {
+    text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    bottom: 43%;
+}
+
+.subtitlesThirdSection {
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+#a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#a::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background-color: #000000;
+    transition: 0.3s ease-in-out;
+    transform: scaleY(1);
+}
+
+#a:hover::before {
+    transform: scaleY(0);
+}
+
+#a::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background-color: #000000;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(1);
+    transition-delay: 0.5s;
+}
+
+#a:hover::after {
+    transform: scaleX(0);
+}
+
+#a span {
+    position: relative;
+    z-index: 3;
+}
+
+button {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    background-color: none;
+    text-decoration: none;
+    background-color: #000000;
+    border: none;
+    padding: 0;
+}
+
+#titleFifthSection {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cards {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectTitles {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.projectDescriptions {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7rem;
+    padding: 2rem;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    text-align: justify;
+}
+
+#titleSeventhSection {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.4rem;
+}
+
+#subtitleSeventhSection {
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4rem;
+}
+
+.linkSeventhSection {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.detailsSeventhSection {
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+#dev {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.slider {
+    border: 2px solid black;
+    width: calc(100% - var(--height));
+    height: var(--height);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slider .list {
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+.slider .list .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 10s linear infinite;
+    transition: filter 0.5s;
+    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1) - 10s) !important;
+}
+.slider .list .item p {
+    width: 100%;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.6rem;
+}
+
+@keyframes autoRun {
+    from {
+        left: 100%;
+    }
+    to {
+        left: calc(var(--width) * -1);
+    }
+}
+
+.slider1 {
+    transform: rotate(90deg) translateX(calc(var(--width) + 56.5px)) translateY(calc(var(--width) - 297px));
+    /* Opzionale: Per evitare che l'elemento esca dai limiti */
+    border: 2px solid black;
+    width: var(--container);
+    height: var(--height);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.slider1 .list {
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+.slider1 .list .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 10s linear infinite;
+    transition: filter 0.5s;
+    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1) - 10s) !important;
+}
+.slider1 .list .item p {
+    width: 100%;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.6rem;
+}
+
+
+
+
+.slider2 {
+    transform: rotate(180deg) translateX(calc(var(--width) - 120px));
+    /* Opzionale: Per evitare che l'elemento esca dai limiti */
+    border: 2px solid black;
+    width: calc(100% - var(--height));
+    height: var(--height);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+}
+.slider2 .list {
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+.slider2 .list .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 10s linear infinite;
+    transition: filter 0.5s;
+    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1) - 10s) !important;
+}
+.slider2 .list .item p {
+    width: 100%;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.6rem;
+}
+
+
+
+#workInProgressTitle{
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+#workInProgressText{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.6rem;
+}
+
+
+.slider3 {
+    transform: rotate(270deg) translateX(calc(var(--width) + 57.5px)) translateY(calc(var(--width) - 297.3px));
+    /* Opzionale: Per evitare che l'elemento esca dai limiti */
+    border: 2px solid black;
+    width: var(--container);
+    height: var(--height);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.slider3 .list {
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+.slider3 .list .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 10s linear infinite;
+    transition: filter 0.5s;
+    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1) - 10s) !important;
+}
+.slider3 .list .item p {
+    width: 100%;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.6rem;
+}
+
+
+.section{
+    height: 100dvh;
+}
