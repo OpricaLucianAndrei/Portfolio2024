@@ -1,3 +1,12 @@
+<div class="sidebar">
+    <ul>
+      <li *ngFor="let section of sections; let i = index" 
+          [class.active]="i === currentSectionIndex"
+          (click)="scrollToSection(i)">
+        <!-- Questo è il puntino -->
+      </li>
+    </ul>
+  </div>
 <section id="1" class="m-0 px-5 py-3 section" #section>
     <div class="row section-content">
         <div class="col-12 d-flex flex-column align-items-center justify-content-center position-relative"

@@ -15,6 +15,7 @@ export class MainComponent {
 
   @HostListener('window:wheel', ['$event'])
   onScroll(event: WheelEvent) {
+    console.log('Scroll event detected', event);
     const delta = Math.sign(event.deltaY); // Determina se lo scroll è verso l'alto o il basso
 
     if (delta > 0) {
@@ -39,6 +40,15 @@ export class MainComponent {
   }
 
   scrollToSection(index: number) {
-    this.sections[index].scrollIntoView({ behavior: 'smooth' });
+    const section = this.sections[index];
+    const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+    
+    window.scrollTo({
+      top: sectionTop,
+      behavior: 'smooth'
+    });
+
+    this.currentSectionIndex = index;
   }
+  
 }
