@@ -1,13 +1,12 @@
 <div class="sidebar">
     <ul>
-      <li *ngFor="let section of sections; let i = index" 
-          [class.active]="i === currentSectionIndex"
-          (click)="scrollToSection(i)">
-        <!-- Questo è il puntino -->
-      </li>
+        <li *ngFor="let section of sections; let i = index" [class.active]="i === currentSectionIndex"
+            (click)="scrollToSection(i)">
+            <!-- Questo è il puntino -->
+        </li>
     </ul>
-  </div>
-<section id="1" class="m-0 px-5 py-3 section" #section>
+</div>
+<section id="s1" class="m-0 px-5 py-3 section" #section>
     <div class="row section-content">
         <div class="col-12 d-flex flex-column align-items-center justify-content-center position-relative"
             style="height: 100dvh;">
@@ -17,34 +16,35 @@
         </div>
     </div>
 </section>
-<section id="2" class="section">
-    <div class="row mt-5 pt-5 section-content">
-        <div class="col-4 px-5">
+<section id="s2" class="section">
+    <div class="row mt-5 pt-5 px-0 section-content" id="row">
+        <div class="col-9 col-sm-4 px-5">
             <h2 class="display-3" id="titleSecondSection">A LITTLE<br> ABOUT ME</h2>
         </div>
-        <div class="col-4 offset-1">
+        <div class="col-4 offset-1" id="imgContainer">
             <img src="../../../assets/images/piatra.png" id="piatra" class="w-100">
-            <p class="text-end">Piatra Neamt, Romania</p>
+            <p class="text-end" id="place">Piatra Neamt, Romania</p>
 
         </div>
         <div class="col-2 offset-1 d-flex justify-content-end pe-5">
             <h4 class="numbers">02</h4>
         </div>
     </div>
-    <div class="row py-5 section-content">
-        <div class="col-5 offset-1 my-4">
-            <p>I am a 22-year-old with a great passion for the world of technology and web development. Although my
+    <div class="row py-sm-5 section-content">
+        <div class="col-5 offset-1 my-4 py-5 px-3">
+            <p id="about">I am a 22-year-old with a great passion for the world of technology and web development.
+                Although my
                 roots are in the quiet countryside of northeastern Romania, it was in Rome that I found my true home
                 ever since I left childhood. After attending Liceo Scientifico Statale Federigo Enriques, I dedicated
                 myself fully to studying as a Full-Stack Web Developer at Epicode. I am not afraid to challenge myself
                 and face new and exciting challenges!</p>
         </div>
-        <div class="col-2 offset-2">
+        <div class="col-6 col-sm-2 offset-sm-2 p-0">
             <img src="../../../assets/images/table.png" id="table" class="w-100">
         </div>
     </div>
 </section>
-<section id="3" class="section">
+<section id="s3" class="section">
     <div class="row mt-5 section-content">
         <div class="col-12 d-flex justify-content-end pe-5 pt-5">
             <h4 class="numbers">03</h4>
@@ -98,15 +98,15 @@
         </div>
     </div>
 </section>
-<section id="4" class="section">
+<section id="s4" class="section">
     <div class="row mt-5 section-content">
         <div class="col-12 d-flex justify-content-end pe-5 pt-5">
             <h4 class="numbers">04</h4>
         </div>
 
     </div>
-    <div class="row my-5 section-content">
-        <div class="col-10 offset-1 p-5 position-relative">
+    <div class="row my-5 section-content p-0">
+        <div class="col-sm-10 col-12 offset-sm-1 p-sm-5 p-0 position-relative">
             <img src="../../../assets/images/cv.png" alt="cv Banner" id="cvBanner" class="w-100">
             <button>
                 <a href="../../../assets/cv/CV.pdf" download="CV.pdf" id="a"><span>Download my CV!</span></a>
@@ -114,7 +114,7 @@
         </div>
     </div>
 </section>
-<section id="5" class="section">
+<section id="s5" class="section">
     <div class="row mt-5 section-content">
         <div class="col-8 offset-2 pt-5 d-flex justify-content-center ">
             <h2 class="display-3" id="titleFifthSection">My Projects</h2>
@@ -126,20 +126,24 @@
     <div class="row d-flex justify-content-center w-100 mt-2 section-content">
         <div class="col-11 d-flex justify-content-around mx-auto pt-5">
             <div class="cards">
-                <a href="https://github.com/clarissa1110/Progetto-BW2-FS0124-gruppo7" target="_blank" class="w-100 px-5 d-flex justify-content-center">
+                <a href="https://github.com/clarissa1110/Progetto-BW2-FS0124-gruppo7" target="_blank"
+                    class="w-100 px-5 d-flex justify-content-center">
                     <div class="w-75 bg-black p-3 d-flex justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
                             class="bi bi-spotify text-white text-center" viewBox="0 0 16 16">
-                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+                            <path
+                                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
                         </svg>
                     </div>
                 </a>
                 <h2 class="projectTitles">Spotify Clone</h2>
-                <p class="projectDescriptions">We created a Spotify clone using HTML, CSS and Javascript, delivering a smooth, engaging,
+                <p class="projectDescriptions">We created a Spotify clone using HTML, CSS and Javascript, delivering a
+                    smooth, engaging,
                     and elegant user experience.</p>
             </div>
             <div class="cards  mx-5">
-                <a href="https://github.com/OpricaLucianAndrei/ConcessionarioPrestigeCarBoutique" target="_blank" class="w-100 px-5 d-flex justify-content-center">
+                <a href="https://github.com/OpricaLucianAndrei/ConcessionarioPrestigeCarBoutique" target="_blank"
+                    class="w-100 px-5 d-flex justify-content-center">
                     <img src="../../../assets/images/PCB.png" alt="PCB LOGO" class="w-75">
                 </a>
                 <h2 class="projectTitles">Prestige Car Boutique</h2>
@@ -151,7 +155,8 @@
 
             </div>
             <div class="cards">
-                <a href="https://github.com/OpricaLucianAndrei/Gruppo-7" target="_blank" class="w-100 px-5 d-flex justify-content-center">
+                <a href="https://github.com/OpricaLucianAndrei/Gruppo-7" target="_blank"
+                    class="w-100 px-5 d-flex justify-content-center">
                     <div class="w-75 bg-black p-3 d-flex justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
                             class="bi bi-twitter-x text-white text-center" viewBox="0 0 16 16">
@@ -168,7 +173,7 @@
     </div>
 
 </section>
-<section id="6" class="section">
+<section id="s6" class="section">
     <div class="row mt-5 section-content">
         <div class="col-12 d-flex justify-content-end pe-5 pt-5">
             <h4 class="numbers">06</h4>
@@ -358,7 +363,7 @@
 
 
 </section>
-<section id="7" class="ps-4 section">
+<section id="s7" class="ps-4 section">
     <div class="row mt-5 section-content">
         <div class="col-10 px-5 pt-5 d-flex justify-content-start mt-5">
             <h4 id="subtitleSeventhSection">Lucian Andrei Oprica
@@ -405,5 +410,20 @@
             <img src="../../../assets/images/dev.png" alt="dev image" id="dev" class="w-100">
 
         </div>
+    </div>
+</section>
+<section class="row w-100 d-flex align-items-center m-0" id="s8">
+    <div class="col-12 d-flex flex-column align-items-center justify-content-center position-relative"
+        style="height: 100dvh;">
+        <h1 id="titleFirstSection">Lucian Andrei Oprica</h1>
+        <img src="../../../assets/images/profilo.png" id="profilo">
+        <h5 id="testo" title="Full-Stack Web Developer">Full-Stack Web Developer</h5>
+    </div>
+    <div class="col-12 d-flex flex-column align-items-center justify-content-center p-5" id="cell">
+        <button>
+            <a href="../../../assets/cv/CV.pdf" download="CV.pdf" id="a"><span>Download my CV!</span></a>
+        </button>
+        <h2 class="m-5 p-3 bg-black text-white text-center">For a better experience use a computer!</h2>
+
     </div>
 </section>
