@@ -123,7 +123,7 @@ li,
 #titleThirdSection {
     text-align: center;
     position: absolute;
-    bottom: 43%;
+    bottom: 63%;
 }
 .subtitlesThirdSection {
     font-size: 2rem;
@@ -394,7 +394,27 @@ button {
         }
     }
 }
+@media (max-width: 992px){
+    .sidebar {
+        visibility: hidden;
+    }
+    #titleFirstSection{
+        font-size: 4.5rem;
+    }
+    #profilo {
+        width: 60%;
+    }
+    #testo{
+        font-size: 2rem;
 
+    }
+    .projectTitles {
+        font-size: 1.6rem;
+    }
+    .projectDescriptions {
+        font-size: 0.9rem;
+    }
+}
 @media (max-width: 576px) {
     //sidebar
     .sidebar {
@@ -450,3 +470,4 @@ button {
     }
    
 }
+
