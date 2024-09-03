@@ -1,5 +1,5 @@
 #s8 {
-    display: none;
+    display: none ;
 }
 #titleSecondSection,
 .numbers,
@@ -415,6 +415,29 @@ button {
 
     }
 
+    #s8{
+        display: block;
+        #cell {
+            height: 100dvh;
+            background-image: url("../../../assets/images/cvcell.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            button {
+                position: static;
+                background-color: none;
+                text-decoration: none;
+                background-color: #000000;
+                border: none;
+                padding: 0;
+            }
+        }
+        #a {
+            font-size: 0.8rem;
+            padding: 5px 10px;
+        }
+    }
+
     #s1,
     #s2,
     #s3,
@@ -425,24 +448,5 @@ button {
     .numbers {
         display: none;
     }
-    #cell {
-        height: 100dvh;
-        display: block;
-        background-image: url("../../../assets/images/cvcell.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        button {
-            position: static;
-            background-color: none;
-            text-decoration: none;
-            background-color: #000000;
-            border: none;
-            padding: 0;
-        }
-    }
-    #a {
-        font-size: 0.8rem;
-        padding: 5px 10px;
-    }
+   
 }
